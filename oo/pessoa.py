@@ -6,9 +6,14 @@ class Pessoa:
 
 if __name__ == '__main__':
     riquelme=Pessoa(nome='Riquelme',idade=10)
-    renato=Pessoa(riquelme,nome='Renato', idade= 35)
+    renato=Pessoa(riquelme,nome='Renato',idade= 35)
 
     print(renato.nome)
     print(renato.idade)
     for filho in renato.filhos:
         print(filho.nome)
+
+    riquelme.sobrenome='Moreira'
+    print(riquelme.sobrenome)
+    print(riquelme.__dict__)
+    print(renato.__dict__)
